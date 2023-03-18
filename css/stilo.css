@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    height: 230px;
+    align-items: center;
+    background-color: peru;
+}
+
+
+input{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: peachpuff;
+}
+
+span{
+    font-weight: bold;
+}
+
+#pronto{
+    display: flex;
+    width: 140px;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+#pronto:hover{
+    background-color: white;
+    transition: 0.6s;
+}

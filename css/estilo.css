@@ -1,0 +1,17 @@
+.pai{
+    height: 200px;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+
+
+}
+
+.teste{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    color: aliceblue;
+}

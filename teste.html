@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario teste</title>
+</head>
+<body>
+    <h1>todos os tipos de inputs</h1>
+
+    <div>
+      <form>
+        <label for="texto">texto</label><br>
+        <input id="texto" type="text" required ><br>
+
+        <label for="email">email</label><br>
+        <input type="email" id="email" required ><br>
+
+        <label for="password">password</label><br>
+        <input type="password" required ><br>
+
+        <label for="number">numero</label><br>
+        <input id="number" type="number" required ><br>
+
+        <input type="submit" value="enviar">
+
+        <div>
+            <p>quais destes abaixo voce tem na sua casa</p>
+
+            <label for="gela">geladeira</label>
+            <input id="gela" type="checkbox"><br>
+    
+            <label for="fogo">fogao</label>
+            <input id="fogo" type="checkbox"><br>
+    
+            <label for="tv">TV</label>
+            <input id="tv" type="checkbox">
+        </div>
+
+        <div>
+            <input id="mas" type="radio" name="sex">
+            <label for="mas">masculino</label>
+
+            <input id="fem" type="radio" name="sex">
+            <label for="fem">feminino</label>
+
+            <input id="not" type="radio" name="sex">
+            <label for="not">prefiro não dizer</label>
+        </div>
+
+        <div>
+            <select>
+                <option value="nada" selected disabled>selecione</option>
+                <option value="janeiro">janeiro</option>
+                <option value="fevereiro">fevereiro</option>
+                <option value="março">março</option>
+                <option value="abril">abril</option>
+            </select>
+        </div>
+
+      </form>
+    </div>
+
+</body>
+</html>
