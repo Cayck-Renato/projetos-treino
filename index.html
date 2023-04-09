@@ -10,20 +10,19 @@
     <h1>todos os tipos de inputs</h1>
 
     <div>
-      <form>
-        <label for="texto">texto</label><br>
-        <input id="texto" type="text" required ><br>
-
-        <label for="email">email</label><br>
-        <input type="email" id="email" required ><br>
-
-        <label for="password">password</label><br>
-        <input type="password" required ><br>
-
-        <label for="number">numero</label><br>
-        <input id="number" type="number" required ><br>
-
-        <input type="submit" value="enviar">
+      <form action="formulario.js" method="get" >
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <label for="texto">texto</label><br>
+            <input id="texto" type="text" required ><br>
+            <label for="email">email</label><br>
+            <input type="email" id="email" required ><br>
+            <label for="password">password</label><br>
+            <input type="password" required ><br>
+            <label for="number">numero</label><br>
+            <input id="number" type="number" required  min="5" max="15"><br>
+            <input type="submit" value="enviar">
+        </fieldset>
 
         <div>
             <p>quais destes abaixo voce tem na sua casa</p>
@@ -39,15 +38,18 @@
         </div>
 
         <div>
-            <input id="mas" type="radio" name="sex">
+            <input id="none" type="radio" name="sex" checked disabled value="none">
+            <label for="none">escolha ></label>
+
+            <input id="mas" type="radio" name="sex" value="mas">
             <label for="mas">masculino</label>
 
-            <input id="fem" type="radio" name="sex">
+            <input id="fem" type="radio" name="sex" value="fem">
             <label for="fem">feminino</label>
 
-            <input id="not" type="radio" name="sex">
+            <input id="not" type="radio" name="sex" value="not">
             <label for="not">prefiro não dizer</label>
-        </div>
+        </div><br><br>
 
         <div>
             <select>
@@ -57,7 +59,19 @@
                 <option value="março">março</option>
                 <option value="abril">abril</option>
             </select>
+        </div><br><br>
+
+        
+        <div>
+            <label for="iphone">celular</label>
+            <input type="number" name="phone" id="iphone"><br><br>
+                
+            <input type="date" name="mes" id="imes" value="2003-11-21"><br>
+            <input type="time" value="00:00"><br>
+
+            <input type="tel">
         </div>
+        
 
       </form>
     </div>
