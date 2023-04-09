@@ -13,20 +13,18 @@
             <h1>Você está convidado</h1>
                 <p>Por favor, reserva o dia 4 de outubro de 2023 <br> Estamos tornando oficial!</p>
                 <hr>
-            <form>
+            <form autocomplete="off">
                 
                 <label for="nome"><br>
-                        <span class="one">Nome</span><br>
-                        <input type="text" id="nome" class="one">
+                        <span class="one">Nome</span><br><!--minlenght = minimo de caracteres/ maxlenght = maximo de caracteres-->
+                        <input type="text" id="nome" class="one" name="nome" required minlength="4" maxlength="30">
                 </label><br><br><br>
+
                 <label for="email">
-                        <span class="one">E-mail<span class="aste">*</span></span><br>
-                        <input type="email" id="email" class="one">
+                        <span class="one">E-mail</span><br>
+                        <input type="email" id="email" class="one" name="email" required>
                 </label><br><br>
-                
-                
-  
-                
+                               
                 <div class="two">
                     <span>Você virá?</span><br>
                     <input id="sim" type="radio" name="son" class="vira">
@@ -39,9 +37,8 @@
                     <label for="talvez">Talvez</label>
                 </div>  
 
-                <input type="submit" name="Enviar">
+                <input type="submit" value="Enviar">
             </form>
-        </div>
-    
+        </div>    
 </body>
 </html>

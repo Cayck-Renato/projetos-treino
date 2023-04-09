@@ -46,14 +46,6 @@ span.one{
 }
 
 
-.aste{
-    color: red;
-    margin-left: 1px;
-}
-
-.rad{
-    display: inline-block;
-}
 
 .two{
     margin-left: 29px;
@@ -71,5 +63,16 @@ input[type="submit"]{
     background-color: rgb(32, 32, 32);
     color: white;
     border-radius: 5px;
-    outline: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover{
+    color: black;
+    background-color: antiquewhite;
+    box-shadow: 2px 3px 8px gray;
+    transition: 0.4s;
+    
 }
